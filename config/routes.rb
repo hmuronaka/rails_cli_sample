@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+
+  get 'command/create'
+  get '/command' => 'command#create'
+
+  resources :tasks do
+    collection do
+      get 'command'
+    end
+  end
+
+  root 'admin/base#index'
+  get '/admin' => 'admin/base#index'
+
+  devise_for :admin_users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

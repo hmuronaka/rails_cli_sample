@@ -1,0 +1,10 @@
+.command.row
+  = form_tag '/command', remote: true, method: :get do
+    .large-10.columns
+      = text_field_tag :command, "",  placeholder: "Command Ex:new task あたらしいタスクを追加する"
+    .large-2.columns
+      = submit_tag :Run, {id: 'run-button', class: 'button  small'}
+.row
+  .large-8.columns
+    .command_result
+

@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Admin user:
+  = @task.admin_user
+p
+  strong Title:
+  = @task.title
+p
+  strong Description:
+  = @task.description
+
+= link_to 'Edit', edit_task_path(@task)
+'|
+= link_to 'Back', tasks_path

@@ -1,0 +1,15 @@
+.row
+  .large-4.columns
+    | Title
+  .large-4.columns 
+    | Description
+  .large-4.columns 
+    | Created 
+- user.tasks.each do |task|
+  .row
+    .large-4.columns 
+      = link_to task.title, edit_task_path(task)
+    .large-4.columns
+      = link_to task.description, edit_task_path(task)
+    .large-4.columns
+      = link_to task.created_at, edit_task_path(task)

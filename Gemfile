@@ -5,7 +5,7 @@ gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', github: 'rails/sass-rails', branch: '4-0-stable'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -40,6 +40,8 @@ gem 'unicorn'
 gem 'mysql2'
 gem 'rb-readline', '~>0.4.2'
 gem 'slim-rails'
+gem 'html2slim'
+gem 'simple_form'
 
 group :development do
   gem 'pry-rails'

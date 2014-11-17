@@ -1,0 +1,54 @@
+/home/hmu/.rbenv/versions/2.1.1/bin/ruby extconf.rb 
+checking for main() in -lc... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling hpricot_scan.c
+hpricot_common.rl: In function ‘hpricot_scan’:
+hpricot_common.rl:73: 警告: 整数 0 とポインタとの順序比較です
+NONE:12: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:73: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:73: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:73: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:46: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:46: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:51: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:51: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:51: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:51: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:56: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:56: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:56: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:56: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:61: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:61: 警告: 整数 0 とポインタとの順序比較です
+hpricot_common.rl:61: 警告: 整数 0 とポインタとの順序比較です
+hpricot_scan.rl:619: 警告: 整数 0 とポインタとの順序比較です
+hpricot_scan.rl: In function ‘make_hpricot_struct’:
+hpricot_scan.rl:803: 警告: ISO C90 forbids mixed declarations and code
+hpricot_scan.rl: トップレベル:
+hpricot_scan.rl:255: 警告: ‘hpricot_ele_set_raw’ defined but not used
+hpricot_scan.rl:255: 警告: ‘hpricot_ele_get_raw’ defined but not used
+hpricot_scan.rl:256: 警告: ‘hpricot_ele_set_parent’ defined but not used
+hpricot_scan.rl:256: 警告: ‘hpricot_ele_clear_parent’ defined but not used
+hpricot_scan.rl:256: 警告: ‘hpricot_ele_get_parent’ defined but not used
+hpricot_scan.rl:258: 警告: ‘hpricot_ele_set_etag’ defined but not used
+hpricot_scan.rl:258: 警告: ‘hpricot_ele_clear_etag’ defined but not used
+hpricot_scan.rl:258: 警告: ‘hpricot_ele_get_etag’ defined but not used
+hpricot_scan.rl:259: 警告: ‘hpricot_ele_set_children’ defined but not used
+hpricot_scan.rl:259: 警告: ‘hpricot_ele_clear_children’ defined but not used
+hpricot_scan.rl:259: 警告: ‘hpricot_ele_get_children’ defined but not used
+compiling hpricot_css.c
+hpricot_css.rl: In function ‘hpricot_css’:
+hpricot_css.rl:87: 警告: フィールド精度 should have type ‘int’, but argument 3 has type ‘long int’
+hpricot_css.c:3407: 警告: ポインタと整数との比較を行なっています
+hpricot_css.c:3407: 警告: ‘eof’ may be used uninitialized in this function
+hpricot_css.rl:96: note: ‘eof’ was declared here
+hpricot_css.rl:97: 警告: ‘aps’ may be used uninitialized in this function
+linking shared-object hpricot_scan.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hpricot_scan.so ./.gem.20141115-18007-1rrdqji
+installing default hpricot_scan libraries

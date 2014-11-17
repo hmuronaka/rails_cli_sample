@@ -1,0 +1,15 @@
+- if can?(:admin, current_admin_user)
+  | You are administrator.
+
+- if can?(:member, current_admin_user)
+  .row.date
+    = DateTime.now
+
+  .row.schedule
+
+  .tasklist
+    = render partial: 'tasks/task_list', locals: {user: current_admin_user}
+
+  .idealist
+
+  .project
